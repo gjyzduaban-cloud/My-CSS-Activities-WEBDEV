@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nested Padding Diagram</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white;
+    margin: 0;
+    padding: clamp(12px, 4vw, 40px);
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+  .purple-box {
+    background-color: #7a1f7a;
+    padding: clamp(6px, 1.5vw, 10px);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .blue-box {
+    background-color: #1414f0;
+    padding: clamp(6px, 1.5vw, 10px);
+    width: 100%;
+  }
+
+  .yellow-text {
+    color: yellow;
+    font-size: clamp(16px, 4vw, 32px);
+    padding: clamp(6px, 1.5vw, 10px);
+    word-wrap: break-word;
+  }
+
+  .red-box {
+    background-color: #ff1414;
+    padding: clamp(6px, 1.5vw, 10px);
+    margin-bottom: clamp(6px, 1.5vw, 10px);
+    width: 100%;
+  }
+
+  .red-box:last-child {
+    margin-bottom: 0;
+  }
+
+  .white-text {
+    color: white;
+    font-size: clamp(16px, 4vw, 32px);
+    word-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+
+  <div class="purple-box">
+    <div class="blue-box">
+
+      <div class="yellow-text">Yellow Text</div>
+      <div class="red-box">
+        <div class="white-text">White Text</div>
+      </div>
+
+      <div class="yellow-text">Yellow Text</div>
+      <div class="red-box">
+        <div class="white-text">White Text</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

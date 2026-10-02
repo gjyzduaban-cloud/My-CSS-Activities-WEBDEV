@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Box Model Diagram</title>
+<style>
+  body {
+    background-color: white;
+    margin: 0;
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+  .diagram {
+    position: relative;
+    width: 500px;
+    height: 550px;
+  }
+
+  /* Teal text box */
+  .text-box {
+    position: absolute;
+    width: 225px;
+    background-color: #4a9b8e;
+    color: black;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+  }
+
+  /* Yellow box with border */
+  .yellow-box {
+    position: absolute;
+    top: 246px;
+    left: 225px;
+    width: 150px;
+    height: 150px;
+    background-color: #f4d03f;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    box-sizing: content-box;
+  }
+
+  /* Red box with border, touching yellow box corner-to-corner */
+  .red-box {
+    position: absolute;
+    top: 437px;
+    left: 55px;
+    width: 150px;
+    height: 150px;
+    background-color: #c0605a;
+    border: 10px solid black;
+    box-sizing: content-box;
+  }
+</style>
+</head>
+<body>
+
+  <div class="diagram">
+    <div class="text-box">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.
+    </div>
+
+    <div class="yellow-box"></div>
+    <div class="red-box"></div>
+  </div>
+
+</body>
+</html>
